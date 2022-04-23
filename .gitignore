@@ -1,0 +1,4 @@
+.envs/.dev.env
+.envs/.stg.env
+.envs/.env
+.env
