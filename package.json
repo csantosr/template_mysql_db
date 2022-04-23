@@ -8,7 +8,9 @@
     "create-env:stg": "cp ./.envs/.eg.env ./.envs/.stg.env",
     "create-env": "cp ./.envs/.eg.env ./.envs/.env",
     "create-env:all": "npm run create-env:dev && npm run create-env:stg && npm run create-env",
-    "up:dev": "cp ./.envs/.dev.env ./.env; env ./.env; docker-compose up -d"
+    "up:dev": "cp ./.envs/.dev.env ./.env; env ./.env; docker-compose up -d",
+    "up:stg": "cp ./.envs/.stg.env ./.env; env ./.env; docker-compose up -d",
+    "up": "cp ./.envs/.env ./.env; env ./.env; docker-compose up -d"
   },
   "keywords": [],
   "author": "Cristian Santos <fernandosdesk@gmail.com>",
